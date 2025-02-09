@@ -86,6 +86,5 @@ class SuitView(QMainWindow):
         updated_suit = self.controller.repair_suit(self.suit)
         self.suit = updated_suit
         self.info_label.setText(self.format_suit_info(updated_suit))
-        if self.controller.model.is_durability_ok(updated_suit):
-            self.error_label.setText("Durability is now acceptable.")
-            self.repair_button.hide()
+        self.error_label.hide()
+        self.repair_button.hide()
