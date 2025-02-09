@@ -7,9 +7,8 @@ from Model.model import SuitModel
 def main():
     app = QApplication(sys.argv)
     main_window = MainWindow()
-    
     model = SuitModel()
-    data = model.read_csv_file()
+    # data = model.read_csv_file()
     # print(data)
     
     controller = SuitController(main_window)
